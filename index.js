@@ -14,6 +14,14 @@ document.addEventListener("keypress",function(){
   }
 });
 
+document.addEventListener("click",function(){
+  if(!started)
+  {
+    started=true;
+    sequence();
+  }
+});
+
 function anim(className){
     $("#" + className).addClass("pressed");
     setTimeout(function(){
